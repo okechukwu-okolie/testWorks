@@ -1,0 +1,3 @@
+the primary difference between a function declaration and a function expression is that a function declaration has its name as part of the function but a function declaration doesnt have a name; it is assigned to a variable.
+closures makes it possible for a global variable to become local
+the return statement in a function determines the end point of a code determined by the scope within which the return statement holds true. when the return statement doesnt exist, it returns undefined.
