@@ -304,6 +304,51 @@ function createPoint(x:number,y:number){
 console.log(createPoint(10,20))
 
 
+const numbers:number[] = [1,2,3,4,5]
+const doublednumbers:number[] = numbers.map(num =>num * 2)
+
+console.log('this is the array',numbers)
+console.log('this is another array', doublednumbers)
+
+//function with union type
+function printId(id:string|number){
+  console.log(`the id is :${id }`)
+}
+
+printId('1234')
+printId(2345)
+
+class Account{
+  private balance:number;
+
+   constructor(initialBalance:number){
+    this.balance = initialBalance
+  }
+
+
+  deposit(amount:number):void{
+    this.balance += amount
+  }
+
+  getBalance():number{
+    return Math.ceil(this.balance)
+  }
+}
+
+const account1 = new Account()
+account1.balance = 20.55
+account1.deposit(300.23)
+account1.deposit(500)
+account1.deposit(234)
+console.log(account1)
+console.log(account1.getBalance())
+
+
+
+
+
+
+
 
 
 
