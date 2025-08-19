@@ -348,6 +348,20 @@ console.log(account1.getBalance())
 
 
 
+function getFirstElement<ElementType>(array:ElementType[]){
+  return array[0]
+}
+
+const number = [4,5,6]
+const firstNumber = getFirstElement([1,2,3])
+console.log(getFirstElement(number))
+console.log(firstNumber)
+
+
+const firstWord = getFirstElement(['abc','def','ghi','jkl'])
+const word = ['lmn','nop','qrs']
+console.log(word,getFirstElement(word))
+console.log(firstWord)
 
 
 
